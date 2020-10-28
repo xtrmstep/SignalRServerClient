@@ -1,0 +1,7 @@
+﻿<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="all" type="CompoundRunConfigurationType">
+    <toRun name="client-be" type="DotNetProject" />
+    <toRun name="server" type="DotNetProject" />
+    <method v="2" />
+  </configuration>
+</component>
