@@ -15,3 +15,4 @@ The Server is a SinglanR server which configure CORS to allow connection from JS
 - [ASP.NET Core SignalR .NET Client](https://docs.microsoft.com/en-us/aspnet/core/signalr/dotnet-client?view=aspnetcore-3.1&tabs=visual-studio)
 - [ASP.NET Core SignalR JavaScript client](https://docs.microsoft.com/en-us/aspnet/core/signalr/javascript-client?view=aspnetcore-3.1)
 - [Host ASP.NET Core SignalR in background services](https://docs.microsoft.com/en-us/aspnet/core/signalr/background-services?view=aspnetcore-3.1)
+- [Logging and diagnostics in ASP.NET Core SignalR](https://docs.microsoft.com/en-us/aspnet/core/signalr/diagnostics?view=aspnetcore-3.1)
