@@ -5,13 +5,33 @@
     <projectFile>Server/Server.csproj</projectFile>
     <projectFile>ClientBackend/ClientBackend.csproj</projectFile>
     <projectFile>ClientFrontend/ClientFrontend.csproj</projectFile>
+    <projectFile>GrpcService/GrpcService.csproj</projectFile>
+  </component>
+  <component name="BranchesTreeState">
+    <expand />
+    <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0ecc1b09-3f7f-4840-8206-54b0555d4c9c" name="Default Changelist" comment="" />
+    <list default="true" id="0ecc1b09-3f7f-4840-8206-54b0555d4c9c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/GrpcService/GrpcService.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GrpcService/NotificationsHub.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GrpcService/Program.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GrpcService/Properties/launchSettings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GrpcService/Protos/greet.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GrpcService/Services/GreeterService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GrpcService/Startup.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GrpcService/appsettings.Development.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GrpcService/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.SignalRServerClient/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SignalRServerClient/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SignalRServerClient.sln" beforeDir="false" afterPath="$PROJECT_DIR$/SignalRServerClient.sln" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/AD61CA47-F8B7-4CC6-93A0-BA44CC73B5C7/1E0/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
@@ -31,15 +51,20 @@
         <option value="$PROJECT_DIR$/Server/Startup.cs" />
         <option value="$PROJECT_DIR$/ClientFrontend/wwwroot/js/site.js" />
         <option value="$PROJECT_DIR$/ClientBackend/Program.cs" />
+        <option value="$PROJECT_DIR$/GrpcService/Startup.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectId" id="1jVTi3uu7FjufSnElN7UwFWPeTZ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.35029355" />
     <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.30039138" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
@@ -57,7 +82,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected=".NET Project.client-be">
+  <component name="RunManager" selected=".NET Project.grpc">
     <configuration default="true" type="CompoundRunConfigurationType">
       <toRun name="client-be" type="DotNetProject" />
       <toRun name="server" type="DotNetProject" />
@@ -85,7 +110,7 @@
       <item itemvalue=".NET Project.client-fe" />
       <item itemvalue=".NET Project.client-be" />
       <item itemvalue=".NET Project.server" />
-      <item itemvalue="Compound.all" />
+      <item itemvalue=".NET Project.grpc" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -97,42 +122,57 @@
       <option name="presentableId" value="Default" />
       <updated>1603888385836</updated>
       <workItem from="1603888389212" duration="8675000" />
+      <workItem from="1603955855275" duration="97000" />
+      <workItem from="1603972539371" duration="164000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="223" y="63" width="1089" height="761" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603894334331">
+    <state x="223" y="63" width="1089" height="761" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603972705673">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="223" y="63" width="1089" height="761" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1603894334331" />
+    <state x="223" y="63" width="1089" height="761" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1603972705673" />
     <state x="637" y="194" key="EnvironmentVariablesDialog" timestamp="1603889071086">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="637" y="194" key="EnvironmentVariablesDialog/0.0.1536.824@0.0.1536.824" timestamp="1603889071086" />
-    <state width="1024" height="316" key="GridCell.Tab.0.bottom" timestamp="1603899142632">
+    <state width="1024" height="316" key="GridCell.Tab.0.bottom" timestamp="1603955953374">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="316" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603899142632" />
-    <state width="1024" height="316" key="GridCell.Tab.0.center" timestamp="1603899142632">
+    <state width="1024" height="316" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603955953374" />
+    <state width="1024" height="316" key="GridCell.Tab.0.center" timestamp="1603955953373">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="316" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1603899142632" />
-    <state width="1024" height="316" key="GridCell.Tab.0.left" timestamp="1603899142632">
+    <state width="1024" height="316" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1603955953373" />
+    <state width="1024" height="316" key="GridCell.Tab.0.left" timestamp="1603955953373">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="316" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1603899142632" />
-    <state width="1024" height="316" key="GridCell.Tab.0.right" timestamp="1603899142632">
+    <state width="1024" height="316" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1603955953373" />
+    <state width="1024" height="316" key="GridCell.Tab.0.right" timestamp="1603955953373">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="316" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1603899142632" />
+    <state width="1024" height="316" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1603955953373" />
     <state width="1024" height="316" key="GridCell.Tab.1.bottom" timestamp="1603899142632">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -197,9 +237,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1024" height="316" key="GridCell.Tab.4.right/0.0.1536.824@0.0.1536.824" timestamp="1603899142633" />
-    <state x="361" y="144" key="Rider.ProjectTemplateDialog.Size" timestamp="1603888689941">
+    <state x="361" y="144" key="Rider.ProjectTemplateDialog.Size" timestamp="1603972560333">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="144" key="Rider.ProjectTemplateDialog.Size/0.0.1536.824@0.0.1536.824" timestamp="1603888689941" />
+    <state x="361" y="144" key="Rider.ProjectTemplateDialog.Size/0.0.1536.824@0.0.1536.824" timestamp="1603972560333" />
   </component>
 </project>
