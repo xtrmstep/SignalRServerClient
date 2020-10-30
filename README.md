@@ -4,9 +4,24 @@ A working sample of a standalone SignalR server with two clients (backend and fr
 
 NB: the current implementation is not a showcase.
 
+## Componnets
+
+|Component|Descripton|Ports|
+|---------|----------|-----|
+|Server|regular Web API which hosts a SignalR hub|HTTP/1 5001|
+|GrpcService|gRpc service which hosts a SignalR hub|HTTP/2 5000, HTTP/1 5001|
+|ClientBackend|regular API which connects to SignalR as a client|HTTP/1 5002|
+|ClientFrontend|regular web application which connects to SignalR from Javascript code as a client|HTTP/1 5003|
+
+SignalR hub is hosted on TCP port 5001. Only one server should be running at a time. In this example it's possible to send a message from a server to all clients who is connected to the SignalR hub.
+
 ## Hint about CORS
 
 The Server is a SinglanR server which configure CORS to allow connection from JS client. The backend client doesn't need CORS.
+
+## Hint about gRPC
+
+gRpc service and Signar hub cannot use the same port because they use different protocols. In gRpc service there is an additional configuration to listen two different ports by Kestrel.
 
 ## References
 

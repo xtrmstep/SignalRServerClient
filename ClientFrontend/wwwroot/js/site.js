@@ -1,7 +1,7 @@
 ﻿"use strict";
 
 var connection = new signalR.HubConnectionBuilder()
-    .withUrl("http://localhost:5000/hubs")
+    .withUrl("http://localhost:5001/hubs")
     .withAutomaticReconnect()
     .build();
 

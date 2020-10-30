@@ -1,11 +1,11 @@
-﻿<component name="ProjectRunConfigurationManager">
+<component name="ProjectRunConfigurationManager">
   <configuration default="false" name="server" type="DotNetProject" factoryName=".NET Project" singleton="false">
     <option name="EXE_PATH" value="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/Server.dll" />
     <option name="PROGRAM_PARAMETERS" value="" />
     <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Server" />
     <option name="PASS_PARENT_ENVS" value="1" />
     <envs>
-      <env name="ASPNETCORE_URLS" value="http://+:5000" />
+      <env name="ASPNETCORE_URLS" value="http://+:5001" />
     </envs>
     <option name="USE_EXTERNAL_CONSOLE" value="0" />
     <option name="USE_MONO" value="0" />

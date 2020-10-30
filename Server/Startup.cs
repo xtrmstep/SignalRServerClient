@@ -45,7 +45,7 @@ namespace Server
             {
                 o.AddDefaultPolicy(b =>
                 {
-                    b.WithOrigins("http://localhost:5001", "http://localhost:5002")
+                    b.WithOrigins("http://localhost:5002", "http://localhost:5003")
                         .AllowCredentials()
                         .AllowAnyHeader();
                 });

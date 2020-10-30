@@ -18,7 +18,7 @@ namespace ClientBackend
         public static void Main(string[] args)
         {
             hub = new HubConnectionBuilder()
-                .WithUrl("http://localhost:5000/hubs")
+                .WithUrl("http://localhost:5001/hubs")
                 .WithAutomaticReconnect()
                 .Build();
             hub.On<string>("ReceiveMessage", text =>
